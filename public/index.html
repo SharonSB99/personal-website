@@ -50,10 +50,10 @@
     :root {
         --text-color: #343a40;
         --text-secondary-color: #6c757d;
-        --text-link-color: #007bff;
+        --text-link-color: #CD7161;
         --background-color: #eaedf0;
         --secondary-background-color: #64ffda1a;
-        --primary-color: #007bff;
+        --primary-color: #CD7161;
         --secondary-color: #f8f9fa;
 
          
@@ -148,7 +148,9 @@
 
 <header id="profileHeader">
   <nav class="pt-3 navbar navbar-expand-lg animate">
-    <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5" style="flex-direction: row-reverse">
+    <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+        <a class="navbar-brand primary-font text-wrap" href="/">
+            <img src="sharonLogo.jpg" width="50" height="50" class="d-inline-block align-top"></a>
         <div>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <svg aria-hidden="true" height="24" viewBox="0 0 16 16" width="24" data-view-component="true">
@@ -202,8 +204,7 @@
                     <p class=hero-content>A passionate gameplay engineer looking for work! Feel free to connect with me on my LinkedIn.</p>
                     <div class=row>
                         <div class="col-auto h-100">
-                            TODO: update resume
-                            <a href=# class=btn download>Resume</a>
+                            <a href="SharonBryant_Resume.pdf" class=btn download>Resume</a>
                         </div>
                         <div class="col-auto px-0 h-100">
                             <span>
@@ -229,12 +230,15 @@
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="row justify-content-center">
                         <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVatltiLNJ8Zq8cKqeKlREbLueAitF4Duf7g&s" class="img-thumbnail mx-auto" alt>
+                            <button id="heroPFP" style="border: none; background-color: transparent;">
+                                <img src="sharonLinkedInPhoto.jpg" class="img-thumbnail mx-auto" alt>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      
     </section>
     <section id=about class="py-0 py-sm-5">
         <div class="container bg-transparent">
@@ -242,7 +246,7 @@
             <div class="bg-transparent row justify-content-center px-3 py-5">
                 <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
                     <div class="image d-flex px-5">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVatltiLNJ8Zq8cKqeKlREbLueAitF4Duf7g&s" class="img-thumbnail mx-auto rounded-circle" alt>
+                        <img src="sharonCasualSweater.jpg" class="img-thumbnail mx-auto rounded-circle" alt>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8 content">
@@ -289,7 +293,7 @@
                                 <div class="single-experience">
                                     <h3 class="bg-transparent">Associate Gameplay Engineer</h3>
                                                                 
-                                    <span>December 2025 - Current</span>
+                                    <span>November 2025 - Current</span>
                                 
                                     <p>A promotion working on the same unreleased Burbank project at Midsummer! Further fleshed out the new interaction system I created from scratch with the 5.6 Unreal Engine upgrade. 
                                         Worked alot with Unreal Engine <b>Gameplay State Trees, Smart Objects, and EQS Querying.</b>
@@ -303,7 +307,7 @@
                                 <div class="single-experience">
                                     <h3 class="bg-transparent">Junior Gameplay Engineer</h3>
 
-                                    <span>July 2024 - December 2025</span>
+                                    <span>July 2024 - November 2025</span>
 
                                     <p>I worked in a fast-paced startup environment with a tight-knit group of amazing people while learning a new game engine on <b>Project Burbank</b>. 
                                     </p>
@@ -395,9 +399,11 @@
             <h3 class="text-center">Projects</h3>
             <div class="row justify-content-center px-3 px-md-5">
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100" title="Project Burbank">
+                    <button class="card my-3 h-100" title="Project Burbank" onclick="{
+                        window.location.href = '/posts/burbank'
+                    }">
                         <div class="card-head">
-                            <img class="card-img-top" src="fav.png" alt="Project Burbank">
+                            <img class="card-img-top" src="images/Burbank/BurbankCoverPhoto.png" alt="Project Burbank">
                         </div>
                         <div class="card-body bg-transparent p-3">
                             <div class="pb-2 bg-transparent">
@@ -413,9 +419,9 @@
                         <div class="card-footer py-3">
                             <a href="/posts/burbank" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
                         </div>
-                    </div>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-md-6 my-3">
+                <!-- <div class="col-lg-4 col-md-6 my-3">
                     <div class="card my-3 h-100" title="Project Burbank">
                         <div class="card-head">
                             <img class="card-img-top" src="fav.png" alt="Project Burbank">
@@ -435,26 +441,7 @@
                             <a href="/posts/burbank" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-3 h-100" title="Project Burbank">
-                        <div class="card-head">
-                            <img class="card-img-top" src="fav.png" alt="Project Burbank">
-                        </div>
-                        <div class="card-body bg-transparent p-3">
-                            <div class="pb-2 bg-transparent">
-                                <span class="badge badge-secondary">Unity</span>
-                            </div>
-                            <h5 class="card-title bg-transparent mt-1">Personal Project</h5>
-                            <div class="card-text bg-transparent secondary-font">
-                                Solo personal project using Unity.
-                            </div>
-                        </div>
-                        <div class="card-footer py-3">
-                            <a href="/posts/" class="float-end btn btn-outline-info btn-sm">Check it Out</a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
             
         </div>
@@ -483,12 +470,11 @@
     <div class="row justify-content-center">
       <div class="col-md-4 text-center">
         <div class="pb-2">
-          <a href="https://hugo-profile.netlify.app/" title="Hugo Profile">
-            <img alt="Footer logo" src="/fav.png" height="40px" width="40px">
+          <a href="#" title="Sharon Bryant">
+            <img alt="Footer logo" src="sharonLogo.jpg" height="60px" width="60px">
           </a>
-        </div>© 2025 All rights reserved
-        <div class="text-secondary">Made with <span class="text-danger">❤</span>and<a href="https://github.com/gurusabarish/hugo-profile" target="_blank" title="Designed and developed by gurusabarish">Hugo Profile</a>
-      </div>
+        </div>© 2026 All rights reserved
+        <div class="text-secondary">Feel free to contact me or connect <span class="text-danger">❤</span></div>
     </div>
   </div>
 </div>
@@ -522,6 +508,41 @@
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    const hero = document.getElementById("hero");
+
+    document.getElementById("heroPFP").addEventListener("click", (event) => {
+        // particle options
+
+        // image particle
+        const particle = document.createElement("img");
+        particle.src = "sharonLogo.jpg";
+        particle.className = "light";
+
+        const rise = -100 - Math.random() * 100; // float up 100–200px
+        const sway = ((Math.random()*-1)*200) + (Math.random()*200);
+
+        particle.style.setProperty("--x", `${event.pageX}px`);
+        particle.style.setProperty("--y", `${event.pageY}px`);
+        particle.style.setProperty("--rise", `${rise}px`);
+        particle.style.setProperty("--sway", `${sway}px`);
+
+        hero.appendChild(particle);
+
+        // Clean up after animation
+        particle.addEventListener("animationend", () => {
+            particle.remove();
+        });
+    })
+
+    const aboutMePic = document.getElementById("aboutMePic").addEventListener("animationend", () => {
+        // stay invisible until mouse out
+        aboutMePic.style.opacity = 0;
+    })
+
+    const casualAboutMePic = document.getElementById("casualAboutMePic").addEventListener("mouseout", () => {
+        aboutMePic.style.opacity = 1;
     })
 
 </script>
