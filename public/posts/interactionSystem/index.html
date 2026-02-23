@@ -27,10 +27,10 @@
 
 <link rel="stylesheet" href="/css/font.css" media="all">
 
-<link rel="canonical" href="http://localhost:1313/posts/burbank">
+<link rel="canonical" href="http://localhost:1313/posts/interactionsystem">
 
 
-<meta property="og:url" content="http://localhost:1313/posts/burbank">
+<meta property="og:url" content="http://localhost:1313/posts/interactionsystem">
   <meta property="og:site_name" content="Sharon Bryant">
   <meta property="og:title" content="Sharon Bryant">
   <meta property="og:locale" content="en_us">
@@ -160,152 +160,70 @@
     <div class="bg-transparent row justify-content-center px-3 py-3">
         <div class="col-lg-8 col-sm-8 col-11">
             <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-3 mb-lg-0 d-none d-sm-none d-md-block">
-                    <div class="image d-flex px-5 py-3">
-                        <img src="https://pbs.twimg.com/profile_images/1790365302598836224/I6Tf_o-3_400x400.png" width="100" height="100" class="img-thumbnail mx-auto rounded-circle" alt>
-                    </div>
-                </div>
-                <h3>Project Burbank</h3>
-                <p>I worked on various systems while working as a gameplay engineer on Burbank. The items listed below are 
-                    some key contributions I made to the project.
+                <h3>Interaction System</h3>
+                <p>I was the sole engineer in charge of building this new core interaction system in the game.</p>
+                <p>IGAs will be used in place of Interaction Game Actions.</p>
+                <p>
+                    The old system was bad. 
+                    - why was the old system bad brief
+                    - new system start at the smart object 
+                    - then go into the gameplay interaction state tree  
+                    - then go into the front end to the interaction director 
                 </p>
             </div>
         </div>
     </div>
-    <div id="contributions" class="container">
+    <div class="container">
         <div class="column px-3 px-md-5">            
-            <button class="card my-3" title="Project Burbank" onclick="{
-                window.location.href = '/posts/interactionsystem'
-            }">
-                <div class="card-head">
-                    <img class="card-img-top" src="images/CharacterStateTreeCropped.jpeg" alt="Interactions and Character AI">
-                </div>
-                <div class="card-body bg-transparent p-2">
-                    <div>
-                        <h3 class="card-title bg-transparent mt-1">Interaction System & Character AI</h3>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>Interaction System overhaul with new character behavior.</p>
-                        </div>
-                    </div>
-                    <div class="pb-2 bg-transparent">
-                        <span class="badge badge-secondary">Gameplay Interaction State Trees</span>
-                        <span class="badge badge-secondary">Character AI Behavior</span>
-                        <span class="badge badge-secondary">Smart Objects</span>
-                        <span class="badge badge-secondary">C++</span>
-                    </div>
-                </div>
-            </button>
-            <button class="card my-3" title="Multiplayer Mode" onclick="{
-                window.location.href = '/posts/burbank'
-            }">
-                <div class="card-head">
-                    <img class="card-img-top" src="images/PauseScreenCropped.jpeg" alt="MultiplayerCropped">
-                </div>
-                <div class="card-body bg-transparent p-2">
-                    <div>
-                        <h3 class="card-title bg-transparent mt-1">Experimental Multiplayer Mode</h3>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>An exploration of Burbank as a couch co-op game. Using Mongoose to spin up a web server manager
-                                and a user facing client UI to ingest player text input.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="pb-2 bg-transparent" style="justify-content: flex-end;">
-                        <span class="badge badge-secondary">Mongoose</span>
-                        <span class="badge badge-secondary">HTML + Unreal Engine interaction</span>
-                        <span class="badge badge-secondary">Local Port Forwarding</span>
-                    </div>
-                </div>
-            </button>
-            <button class="card my-3" title="Core UI Elements" onclick="{
-                window.location.href = '/posts/burbank'
-            }">
-                <div class="card-head">
-                    <img class="card-img-top" src="images/PauseScreenCropped.jpeg" alt="UIScreenExampleCropped">
-                </div>
-                <div class="card-body bg-transparent p-2">
-                    <div>
-                        <h3 class="card-title bg-transparent mt-1">Core UI Screens & Elements</h3>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>Multiple UI screens based on UX is Fine produced mockups. Animated some key notifications and 
-                                created complex screens with multiple functionalities that were used extensively throughout the game.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="pb-2 bg-transparent" style="justify-content: flex-end;">
-                        <span class="badge badge-secondary">Common UI</span>
-                        <span class="badge badge-secondary">Viewmodels</span>
-                        <span class="badge badge-secondary">Animation</span>
-                        <span class="badge badge-secondary">Audacity for sound</span>
-                    </div>
-                </div>
-            </button>
-            <button class="card my-3" title="Doorways" onclick="{
-                window.location.href = '/posts/burbank'
-            }">
-                <div class="card-head">
-                    <img class="card-img-top" src="images/DoorwaysCropped.jpeg" alt="Doorways">
-                </div>
-                <div class="card-body bg-transparent p-2">
-                    <div>
-                        <h3 class="card-title bg-transparent mt-1">Doorways</h3>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>Implemented a character entrance and exit subsystem to manage intros/exits within a scene.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="pb-2 bg-transparent" style="justify-content: flex-end;">
-                        <span class="badge badge-secondary">Staging Subsystem</span>
-                        <span class="badge badge-secondary">Level Sequences</span>
-                        <span class="badge badge-secondary">Doorway Actors</span>
-                    </div>
-                </div>
-            </button>
-            <button class="card my-3" title="Mood System" onclick="{
-                window.location.href = '/posts/burbank'
-            }">
-                <div class="card-head">
-                    <img class="card-img-top" src="images/PauseScreenCropped.jpeg" alt="Mood System Cropped">
-                </div>
-                <div class="card-body bg-transparent p-2">
-                    <div>
-                        <h3 class="card-title bg-transparent mt-1">Mood System</h3>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>Interaction System overhaul with new character behavior.</p>
-                        </div>
-                    </div>
-                    <div class="pb-2 bg-transparent" style="justify-content: flex-end;">
-                        <span class="badge badge-secondary">RandTables</span>
-                        <span class="badge badge-secondary">Mood Infos</span>
-                        <span class="badge badge-secondary">Game Effects</span>
-                        <span class="badge badge-secondary">Viewmodels</span>
-                        <span class="badge badge-secondary">Fact Tags</span>
-                    </div>
-                </div>
-            </button>
-            <button class="card my-3" title="Confessionals" onclick="{
-                window.location.href = '/posts/burbank'
-            }">
-                <div class="card-head">
-                    <img class="card-img-top" src="images/ConfessionalCropped.jpg" alt="Confessional Cropped">
-                </div>
-                <div class="card-body bg-transparent p-2">
-                    <div>
-                        <h3 class="card-title bg-transparent mt-1">Character Confessional</h3>
-                        <div class="card-text bg-transparent secondary-font">
-                            <p>Created a custom gamemode that was a core mechanic in Burbank. Players were able to directly interact with characters in game taking custom input and producing responses 
-                                with and without voice.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="pb-2 bg-transparent" style="justify-content: flex-end;">
-                        <span class="badge badge-secondary">Flow Graph</span>
-                        <span class="badge badge-secondary">Proprietary Software</span>
-                    </div>
-                </div>
-            </button>
+            <h5>Interaction Pain Points of the Past</h5>
+            <p>
+                Interactions used to be executed as game actions where you define the montage to play on the character. This was very inflexible and was unable to handle a change where we had to dynamically
+                assign different kinds of IGAs (Interaction Game Actions) to different objects at the start of a scene. So you may have a character pouring tea at a jukebox, which is not ideal. The cost and reward were also defined on the IGA and had a similar issue 
+                to the mismatching animation problem.
+            </p>
+
+            <h5>Interaction Actors</h5>
+            <div class="container justify-content-center">
+                <img class="img-fluid" src="images/MidInteractionActors.png"/>
+                <strong>Figure 1. A MidInteractionActor in a blueprint viewport.</p></strong><p>
+            </div>
+            <p>I created a new MidInteractionActor class that houses a Smart Object Component that has a SmartObject Info defined. The Smart Object Info has information
+                on what an interaction looks/does in relation to this actor. Different kinds of Interactions can have different Smart Object definitions depending on placement and behavior. 
+                I made a re-usable "single slot in-place" SmartObject definition that follow the pattern of many interactions in the project. 
+            </p>
+
+            <h5>New Smart Object Definitions</h5>
+            <p>A benefit to the refactor is that we could cull alot of repetitive SmartObject definition assets we defined for every single interaction in the project.
+                By making Smart Object Definitions that had common slot placement and character animation behavior, we could simply re-use a generic definition with a state tree that could handle all the specifics of the visualization.
+            </p>
+            <div class="container">
+                <img class="img-fluid" src="images/ChairSmartObjectExample.png"/>
+                <strong>
+                    <p>Figure 2. Things like chairs with the same height could use the same smart object definition like the one above.</p></strong>
+            </div>
+            <p>Of course you can still make a new Smart Object definition for unique interactions that have different requirements and placements. You can make a new one to accomodate a variety of entrances/exits, different number/placement of slots,
+                unique behaviors in specific slots, etc. Until Smart Object definitions become more flexible, we need to define a new definition for interaction actors that are more complicated.
+                An example is a bar with patrons and staff behaving differently and constrained to certain slots (patron side/employee side). The visualization may need different animation assets as well. 
+
+            </p>
+
+            <h5>Gameplay Interaction State Tree Schemas</h5>
+            <p>a state tree that gets spun up independently from the original context. 
+                several kinds of re-usable behavior in our project 
+                - pose indefinitely using pose infos 
+                - single montage and go
+                - contextual animation with object
+                - contextual animation between two people
+            </p>
+
+            <h5>Interaction Director Component</h5>
+            <p>add a view of the front end context action menu
+                on click -> sends signal to interaction component that keeps track of valid interactions at any given time
+            </p>
+
+            <h5>New Character AI Tree</h5>
+            <p>state tree event go and do the thing, add the picture</p>
         </div>
-        
     </div>
 </div>
 
