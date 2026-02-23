@@ -6,8 +6,15 @@
     <description>Recent content on The Coding Dungeon</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 13:22:21 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 15:16:41 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CoreUIAndElements</title>
+      <link>http://localhost:1313/posts/coreuiandelements/</link>
+      <pubDate>Mon, 23 Feb 2026 15:16:41 -0500</pubDate>
+      <guid>http://localhost:1313/posts/coreuiandelements/</guid>
+      <description>&lt;p&gt;hi&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Multiplayer</title>
       <link>http://localhost:1313/posts/multiplayer/</link>

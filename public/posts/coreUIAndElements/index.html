@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta name="generator" content="Hugo 0.154.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=../../sharonLogo.jpg type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+<link rel="canonical" href="http://localhost:1313/posts/coreUIAndElements/">
+    
+<meta property="og:url" content="http://localhost:1313/posts/coreUIAndElements">
+  <meta property="og:site_name" content="Sharon Bryant">
+  <meta property="og:title" content="Sharon Bryant">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sharon Bryant">
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #CD7161;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #CD7161;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #CD7161;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content=ZgotmplZ>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/contributions.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+<title>
+    Core UI & Elements | Sharon Bryant
+</title>
+  </head>
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+<script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let s=document.getElementById("profileHeader"),t=window.pageYOffset,n=!1,o=!0,i=o?prevScrollPos>t:t>0;i?s.classList.add("showHeaderOnTop"):n=!0,t===0&&(n=!0),n&&s.classList.remove("showHeaderOnTop"),prevScrollPos=t})</script>
+
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                <img src="../../sharonLogo.jpg" width="50" height="50" class="d-inline-block align-top">
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+<div id="content" class="py-4">
+    <div class="bg-transparent row justify-content-center px-3 py-3">
+        <div class="col-lg-8 col-sm-8 col-11">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <h3>Core UI & Elements</h3>
+                <p>
+                    I worked on a number of core UI screens of the game, modal elements, and material styling for the project. I also
+                    got experience putting in widget animations for polish and design flair. 
+                </p>
+                <p>We used a plugin called
+                    Common UI for making the screens and elements. Most of the designs were first mocked up by UX is Fine. </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column px-3 px-md-5">            
+            <h5>Pause Screen</h5>
+                <p>The pause screen had multiple functions that it needed to handle. The pause menu handled redirection to specific playermodes that were
+                    creative mode exclusive, volume sliders for different sound classes, making saves, loading saves, and returning to the main menu.
+                </p>
+                <div class="container text-center py-3">
+                    <img class="img-fluid" src="images/PauseMenu.png"/>
+                    <figcaption><strong>Figure 1.</strong> The pause menu UI on the default options tab.</figcaption>
+                </div>
+            <h5>Post Production</h5>
+            <p>
+                I implemented the screen for making playback video edits from a scene in the game. It could filter by character lines, you could change and edit what they said, 
+                you could also add filter effects per line. The video at first shows the overall screen and then shows some functionality (but a little zoomed in). This is the only video available
+                of this function working. Excuse the crass language promise it wasn't me editing the lines.
+            </p>
+            <div class="container text-center py-3">
+                <video class="img-fluid" controls>
+                    <source src="videos/PostProduction.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                    <strong>Video 1.</strong> A coworker testing out the post production UI.
+                </figcaption>
+            </div>
+            <h5>Playback</h5>
+            <p>
+               You could rewatch the entire screen landscape or vertical. The vertical is a mockup of what it might look like on a mobile phone.
+               You can also flip between playback and the post production screen to see your edits played back. 
+            </p>
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="images/landscapePlayback.png"/>
+                <figcaption><strong>Figure 2.</strong> Landscape playback screen.</figcaption>
+            </div>
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="images/verticalPlayback.png"/>
+                <figcaption><strong>Figure 3.</strong> Vertical playback screen.</figcaption>
+            </div>
+
+            <h5>Level Up Ability Chooser</h5>
+            <p>
+                Not only did I implement the overall character experience system, I designed and produced the UI for the ability selector. The catchphrase
+                ability would reroute the player to a catchphrase creator screen where they could make their own phrase and hear it spoken by the character.
+            </p>
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="images/LevelUpScreen.png"/>
+                <figcaption><strong>Figure 4.</strong> Level up ability selector screen. I'm sorry I got him mid-blink.</figcaption>
+            </div>
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="images/CatchphraseScreen.png"/>
+                <figcaption><strong>Figure 5.</strong> Catchphrase creator screen.</figcaption>
+            </div>
+
+            <h5>Character Confessional</h5>
+            <p>
+                I also implemented the functionality behind the confessional mechanic in the game. Players could use text to interact with the characters directly or
+                use text to speech to ask their question.
+            </p>
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="images/ConfessionalScreen.jpg"/>
+                <figcaption><strong>Figure 6.</strong> Confessional player input screen.</figcaption>
+            </div>
+
+            <h5>Next Scene Picker</h5>
+            <p>
+               Besides the map version of the scene picker, we have a UI screen version of the next scene picker. I implemented a new version of this using existing 
+               cast status viewmodels. While choosing the premise of the next screen, you could also use the episode timeline at the bottom to review the history of previously played screens.
+               Here is a video of the first iteration of this screen working.
+            </p>
+            <div class="container text-center py-3">
+                <video class="img-fluid" controls>
+                    <source src="videos/NextSceneFirstIteration.mp4" type="video/mp4">
+                </video>
+                <figcaption>
+                    <strong>Video 2.</strong> First iteration of the next scene picker.
+                </figcaption>
+            </div>
+            
+            <h5>Director's Notes Modal</h5>
+            <p>
+                This modal was the first modal using the UX is Fine design. This was the basis for many other modals in the project. 
+                You could use this modal to customize dialogue cards.
+            </p>
+            <div class="container text-center py-3">
+                <img class="img-fluid" src="images/DirectorsNotesModal.png"/>
+                <figcaption><strong>Figure 7.</strong> The director's notes modal in the middle of editing a dialogue.</figcaption>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="contact" class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <ul style="list-style: none; margin: 0; padding: 50px; display: inline-flex">
+                    <li style="padding-right: 15px">
+                        <a href="https://github.com/SharonSB" target="_blank" rel="noreferrer"><i class="fab fa-github footer-icon fa-3x" aria-label=""></i></a>
+                    </li>
+                    <li style="padding-right: 15px">
+                        <a href="https://www.linkedin.com/in/sharon-bryant-022652157/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin footer-icon fa-3x" aria-label=""></i></a>
+                    </li>
+                    <li style="padding-right: 15px">
+                        <a href="mailto:sharon.suji.bryant@gmail.com" target="_blank" rel="noreferrer"><i class="fas fa-envelope footer-icon fa-3x" aria-label=""></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center">
+        <div class="pb-2">
+          <a href="../../" title="Sharon Bryant">
+            <img alt="Footer logo" src="../../sharonLogo.jpg" height="60px" width="60px">
+          </a>
+        </div>© 2026 All rights reserved
+        <div class="text-secondary">Feel free to contact me or connect <span class="text-danger">❤</span></div>
+    </div>
+  </div>
+</div>
+</footer>
+<script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+</html>
