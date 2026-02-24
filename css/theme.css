@@ -1,51 +1,51 @@
-/* light mode */
-.light > *{
-    background-color: var(--background-color) !important;
-    color: var(--text-color) !important;
+
+:root {
+    --text-color: #000000;
+    --text-secondary-color: #000000;
+    --text-link-color: #fff;
+    --background-color: #eaedf0;
+    --secondary-background-color: #64ffda1a;
+    --primary-color: #fff;
+    --secondary-color: #f8f9fa;
 }
 
-.light > #footer-socialNetworks-github-svg-path{
-    fill: none;
+html, body {
+    /* Use the variable as a fallback, but don't let it block the stickers */
+    background-color: var(--background-color); 
+    margin: 0;
+    padding: 0;
 }
 
-/* dark mode */
-.dark {
-    --background-color: var(--background-color-dark) !important;
-    --secondary-background-color: var(--secondary-background-color-dark) !important;
-    --text-color: var(--text-color-dark) !important;
-    --text-secondary-color: var(--text-secondary-color-dark) !important;
-    --text-link-color: var(--text-link-color-dark) !important;
-    --primary-color: var(--primary-color-dark);
-    --secondary-color: var(--secondary-color-dark);
+.light * {
+  background-color: transparent !important;
 }
 
-.dark #footer-socialNetworks-github-svg-path{
-    fill: #FFFFFF;
+body.light {
+  background-color: transparent;
 }
 
-.text-secondary {
-    color: var(--text-secondary-color) !important;
+.sticker-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  
+  background: 
+    url('../static/bgGridDarker.jpg') center center / cover no-repeat var(--background-color, #ffffff);
+
+    
 }
 
-#theme-toggle:focus {
-    outline: 0;
-}
-
-#theme-toggle svg {
-    height: 18px;
-}
-
-button#theme-toggle {
-    border: none;
-    font-size: 26px;
-    margin: auto 4px;
-}
-
-body.dark #moon {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.dark) #sun {
-    display: none;
+@media (min-width: 768px) {
+  .sticker-background {
+    background: 
+      url('../static/kyaEmote.png') 10% 20% / 100px no-repeat, 
+      url('../static/ermEmote.png') 80% 50% / 80px no-repeat,
+      /* Keep the bottom layer the same */
+      linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+      url('../static/bgGridDarker.jpg') center center / cover no-repeat var(--background-color, #ffffff);
+  }
 }

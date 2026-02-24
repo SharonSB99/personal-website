@@ -129,7 +129,7 @@ header .navbar.animate {
 
 #hero .subtitle {
     font-size: clamp(14px,5vw,16px);
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 #hero h1 {
@@ -139,7 +139,7 @@ header .navbar.animate {
 
 #hero h2 {
     font-size: clamp(40px, 8vw, 60px);
-    opacity: 0.5;
+    opacity: .8;
 }
 
 #hero p {
@@ -165,7 +165,7 @@ header .navbar.animate {
 }
 
 #hero .image.animate img:hover {
-    box-shadow: 0 0 11px #CD7161;
+    box-shadow: 0 0 120px #fff;
     /* filter: contrast(1.2); */
 }
 
