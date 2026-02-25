@@ -405,10 +405,11 @@
 
     document.getElementById("heroPFP").addEventListener("click", (event) => {
         // particle options
-
+        var sparkleOptions = ["BigSparkle.png", "BigSparkleHole.png", "CircleHole.png", "SmallSparkle.png", "SparkleDot.png", "SparkleGroup.png", "SparkleGroupFlipped.png"];
+        const randomIdx = Math.floor(Math.random() * sparkleOptions.length);
         // image particle
         const particle = document.createElement("img");
-        particle.src = "static/sharonLogo.jpg";
+        particle.src = "static/stickers/" + sparkleOptions[randomIdx];
         particle.className = "light";
 
         const rise = -100 - Math.random() * 100; // float up 100–200px
