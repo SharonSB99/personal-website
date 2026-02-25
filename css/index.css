@@ -165,7 +165,7 @@ header .navbar.animate {
 }
 
 #hero .image.animate img:hover {
-    box-shadow: 0 0 120px #fff;
+    box-shadow: 0 0 120px var(--primary-color);
     /* filter: contrast(1.2); */
 }
 
